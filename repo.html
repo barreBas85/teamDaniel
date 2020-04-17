@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Repo</title>
-    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/style.css?v33" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar">
         <span class="navbar-toggle" id="js-navbar-toggle">
             <span></span>
-            <span></span>
-            <span></span>
+        <span></span>
+        <span></span>
         </span>
-        <a href="#" class="logo">Team Daniel</a>
+        <a href="index.html" class="logo">Team Daniel</a>
         <ul class="main-nav" id="js-menu">
             <li>
                 <a href="index.html" class="nav-links">Home</a>
@@ -31,12 +31,62 @@
             <li>
                 <a href="gay.html" class="nav-links">Joris</a>
             </li>
+            <li>
+                <a href="repo.html" class="nav-links">Hoe maak ik een repo</a>
+            </li>
         </ul>
     </nav>
 
     <div class="container">
-        <h1>Welkom</h1>
-        <a href="index.html">index</a>
+        <h1>Github repo</h1>
+        <br>
+        <p>
+        Als allereerste, als je nog geen github repo hebt gemaakt doe dat dan als volgt:
+        <br> 
+        Zodra je ingelogd bent op je github klik rechts bovenin op je profiel foto en klik nieuwe repository.
+        </p>
+        <img src="https://help.github.com/assets/images/help/repository/repo-create.png">
+        <p>
+        Download dan <a href="https://gitforwindows.org/">git bash</a> en open het na installatie.
+        <br> 
+        Type dan in:
+        </p>
+        <blockquote>
+            cd Desktop<br>
+            mkdir github_test<br>
+            cd github_test
+        </blockquote>
+        <p>
+        Ga dan terug naar github en ga naar de repo die je zojuist hebt gemaakt.
+        <br>
+        Klik dan op het volgende en kopieër dat.
+        </p>
+        <img src="https://i.imgur.com/G76TQ5X.png">
+        <p>Type dan de volgende code in je git bash:</p>
+        <blockquote>
+            git clone (plak hier je link)<br>
+            cd (naam van je repo)
+        </blockquote>
+        <p>Om te plakken rechtermuis klik op je git bash en klik op plakken. zoals hier:</p>
+        <img src="https://i.imgur.com/6bZXVXX.png">
+        <p>Dan zou je iets zoals dit moeten zien:</p>
+        <img src="https://i.imgur.com/SLOSkeJ.png">
+        <p>Dan kan je nu in die folder gaan en bestanden er in zetten die je naar je github repo wilt pushen (uploaden)<br>
+        Als je dat gedaan hebt voer je daarna dit uit in je git bash:</p>
+        <blockquote>
+            git add .<br>
+            git commit -m 'Mijn eerste github repo!'<br>
+            git push
+        </blockquote>
+        <p>Dan komt er iets te staan als dit:</p>
+        <img src="https://i.imgur.com/4kKKWEY.png">
+        <p>Daarna hoef je nog maar 1 commando uit te voeren en je bent klaar!</p>
+        <blockquote>
+            git push
+        </blockquote>
+        <p>En als je nu naar je github repo gaat kan je je bestanden daar zien!</p>
+        <img src="https://i.imgur.com/oFRrp8n.png">
+        <p>Bedankt voor het volgen van de uitleg en ik hoop dat het heeft geholpen!</p>
     </div>
 
     <script src="scripts/main.js"></script>
